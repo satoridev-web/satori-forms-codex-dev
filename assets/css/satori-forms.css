@@ -1,0 +1,89 @@
+:root {
+    --satori-forms-accent: #0a7cff;
+    --satori-forms-border: #d4d7dd;
+    --satori-forms-error: #c0392b;
+    --satori-forms-success: #1b8755;
+    --satori-forms-spacing: 1rem;
+}
+
+.satori-form {
+    margin: var(--satori-forms-spacing) 0;
+}
+
+.satori-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--satori-forms-spacing);
+}
+
+.satori-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.satori-field__label {
+    font-weight: 600;
+}
+
+.satori-field__control,
+.satori-field__choice input {
+    border: 1px solid var(--satori-forms-border);
+    border-radius: 4px;
+    padding: 0.65rem;
+    font-size: 1rem;
+}
+
+.satori-field__choice {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+}
+
+.satori-field__help {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.satori-field__errors {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--satori-forms-error);
+    font-size: 0.9rem;
+}
+
+.satori-form__errors,
+.satori-form__success {
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.satori-form__errors {
+    border: 1px solid var(--satori-forms-error);
+    color: var(--satori-forms-error);
+    background: #fff4f3;
+}
+
+.satori-form__success {
+    border: 1px solid var(--satori-forms-success);
+    color: var(--satori-forms-success);
+    background: #f2fff7;
+}
+
+.satori-form__submit {
+    background: var(--satori-forms-accent);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.satori-form__submit:hover,
+.satori-form__submit:focus {
+    opacity: 0.9;
+}

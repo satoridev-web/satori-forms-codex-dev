@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ruleset name="SATORI Forms">
+    <description>WordPress Extra standard for SATORI Forms.</description>
+    <rule ref="WordPress-Extra">
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+    </rule>
+    <file>includes</file>
+    <file>templates</file>
+    <file>satori-forms.php</file>
+</ruleset>
